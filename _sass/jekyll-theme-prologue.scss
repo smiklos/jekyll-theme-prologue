@@ -162,8 +162,13 @@
 		border-radius: 4px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
-		color: #F1F2F3;
 		padding: 0.25em 0.325em;
+
+		&.language-plaintext {
+		   background: #41484c;
+		   border-color: #272822;
+		   color: #F1F2F3;
+		}
 	}
 
 	pre {
