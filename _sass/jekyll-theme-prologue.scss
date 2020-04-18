@@ -73,6 +73,15 @@
 		}
 	}
 
+	div {
+
+        &.language-plaintext {
+                   background: #252620;
+                   border-color: #272822;
+                   color: #F1F2F3;
+                }
+	}
+
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
