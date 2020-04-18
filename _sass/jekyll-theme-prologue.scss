@@ -65,7 +65,7 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #111;
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -73,18 +73,28 @@
 		}
 	}
 
+	div {
+
+        &.language-plaintext {
+                   background: #252620;
+                   border-color: #272822;
+                   color: #F1F2F3;
+                }
+	}
+
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #111;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: 400;
 		color: #666;
 		line-height: 1.5em;
+		margin-bottom: 10px;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -158,11 +168,17 @@
 
 	code {
 		background: rgba(0, 0, 0, 0.05);
-		border-color: rgba(0, 0, 0, 0.2);
+        border-color: rgba(0, 0, 0, 0.2);
 		border-radius: 4px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		padding: 0.25em 0.325em;
+
+		&.language-plaintext {
+		   background: #252620;
+		   border-color: #272822;
+		   color: #F1F2F3;
+		}
 	}
 
 	pre {
@@ -246,13 +262,13 @@
 		}
 
 		&.avatar48 {
-			width: 48px;
-			height: 48px;
+			width: 96px;
+			height: 96px;
 			background: #f00;
 
 			img {
-				width: 48px;
-				height: 48px;
+				width: 96px;
+				height: 96px;
 			}
 		}
 
@@ -530,7 +546,7 @@
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
-		min-height: 48px;
+		min-height: 96px;
 		cursor: default;
 
 		a {
@@ -729,19 +745,19 @@
 		/* Header */
 
 			#header {
-				width: 300px;
+				width: 400px;
 			}
 
 		/* Footer */
 
 			#footer {
-				margin-left: 300px;
+				margin-left: 400px;
 			}
 
 		/* Main */
 
 			#main {
-				margin-left: 300px;
+				margin-left: 400px;
 			}
 
 	}
